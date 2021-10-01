@@ -174,7 +174,6 @@ training_args = Seq2SeqTrainingArguments(
 # %%
 rouge = datasets.load_metric("rouge")
 def compute_metrics(pred):
-    print("HOOOOOOOOOOOOOOOOOOOOOOOOO")
     labels_ids = pred.label_ids
     pred_ids = pred.predictions
 
